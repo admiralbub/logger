@@ -57,14 +57,10 @@ config/logger.php
 
 ```php
 <?php 
-
     return [
-
         'email_to' => 'your@gmail.com', // Write your email. Example: your@gmail.com
-
         'type' => 'file' // 3 types: file, email, or db
     ];
-
 ?>
 ```
 
@@ -78,3 +74,7 @@ config/logger.php
 
 3. `http://127.0.0.1/log-to-all`  
    Sends a log message to all loggers.
+
+### Log file
+
+The log file with all the records is located in `/storage/log.log`
