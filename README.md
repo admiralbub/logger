@@ -10,14 +10,19 @@
 ## Installation
 
 ### Clone the repository: 
+
 `git clone https://github.com/admiralbub/logger.git`
+
 `cd logger`
 
 ### Install dependencies: 
+
 `composer install`
 
 ### Setup environment
+
 Copy .env.example to .env:
+
 `cp .env.example .env`
 
 ### Configure the .env file
