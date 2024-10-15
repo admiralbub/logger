@@ -1,31 +1,31 @@
 # Logger
 
-## Requirements
+## 1 Requirements
 
 + PHP >= 8.1
 + Composer
 + MySQL or PostgreSQL
 + Laravel 10
 
-## Installation
+## 2 Installation
 
-### Clone the repository: 
+### 2.1 Clone the repository: 
 
 `git clone https://github.com/admiralbub/logger.git`
 
 `cd logger`
 
-### Install dependencies: 
+### 2.2 Install dependencies: 
 
 `composer install`
 
-### Setup environment
+### 2.3 Setup environment
 
 Copy .env.example to .env:
 
 `cp .env.example .env`
 
-### Configure the .env file
+### 2.4 Configure the .env file
 Make sure to configure your database credentials and other environment settings.
 
 ```
@@ -37,21 +37,21 @@ DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
 
-### Generate application key:
+### 2.5 Generate application key:
 `php artisan key:generate`
 
-### Migrate the database
+### 2.6 Migrate the database
 
 Run the following command to migrate your database tables:
 `php artisan migrate`
 
 
-### Run the application
+### 2.7 Run the application
 
 To serve the application locally:
 `php artisan serve`
 
-### Setting config file
+### 2.8 Setting config file
 
 config/logger.php
 
@@ -64,7 +64,7 @@ config/logger.php
 ?>
 ```
 
-### Demonstration of controller methods via url
+## 3. Demonstration of controller methods via url
 
 1. `http://127.0.0.1/log`  
    Sends a log message to the default logger.
@@ -75,6 +75,6 @@ config/logger.php
 3. `http://127.0.0.1/log-to-all`  
    Sends a log message to all loggers.
 
-### Log file
+## 4. Log file
 
 The log file with all the records is located in `/storage/log.log`
