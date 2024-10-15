@@ -23,12 +23,14 @@ Copy .env.example to .env:
 ### Configure the .env file
 Make sure to configure your database credentials and other environment settings.
 
-`DB_CONNECTION=mysql`
-`DB_HOST=127.0.0.1`
-`DB_PORT=3306`
-`DB_DATABASE=your_database`
-`DB_USERNAME=your_username`
-`DB_PASSWORD=your_password`
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
 
 ### Generate application key:
 `php artisan key:generate`
@@ -60,6 +62,7 @@ config/logger.php
 
 ?>
 ```
+
 ### Demonstration of controller methods via url
 
 1. `http://127.0.0.1/log`  
