@@ -47,15 +47,26 @@ To serve the application locally:
 ### Setting config file
 
 config/logger.php
-`<?php 
-    return [
-        'email_to'=>'your@gmail.com', //Write your email. Exmaple your@gmail.com
-        'type'=>'file' //3 types: file, email, or db
-    ]
-?>`
 
+```php
+<?php 
+
+    return [
+
+        'email_to' => 'your@gmail.com', // Write your email. Example: your@gmail.com
+
+        'type' => 'file' // 3 types: file, email, or db
+    ];
+
+?>
+```
 ### Demonstration of controller methods via url
 
-`http://127.0.0.1/log //Sends a log message to the default logger.`
-`http://127.0.0.1/log/{type} //Sends a log message to a special logger. 3 types: file, email, or db`
-`http://127.0.0.1/log-to-all //Sends a log message to all loggers.`
+1. `http://127.0.0.1/log`  
+   Sends a log message to the default logger.
+
+2. `http://127.0.0.1/log/{type}`  
+   Sends a log message to a special logger. 3 types: `file`, `email`, or `db`.
+
+3. `http://127.0.0.1/log-to-all`  
+   Sends a log message to all loggers.
